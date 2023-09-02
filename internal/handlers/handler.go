@@ -6,6 +6,7 @@ import (
 	"github.com/labstack/echo/v4"
 
 	model "github.com/gamepkw/authentication-banking-microservice/internal/models"
+	userModel "github.com/gamepkw/users-banking-microservice/models"
 )
 
 // ResponseError represent the response error struct
@@ -28,7 +29,7 @@ func NewAuthenticationHandler(e *echo.Echo, auths model.AuthenticationService) {
 
 func (auth *AuthenticationHandler) SendOtp(c echo.Context) (err error) {
 
-	var set model.UpdatePassword
+	var set userModel.UpdatePassword
 	if err = c.Bind(&set); err != nil {
 		return c.JSON(http.StatusUnprocessableEntity, err.Error())
 	}
