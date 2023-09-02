@@ -1,7 +1,7 @@
 package utils
 
 import (
-	model "github.com/gamepkw/users-banking-microservice/internal/models"
+	model "github.com/gamepkw/authentication-banking-microservice/internal/models"
 
 	"golang.org/x/crypto/bcrypt"
 )

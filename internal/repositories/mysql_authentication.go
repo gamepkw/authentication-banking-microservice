@@ -5,8 +5,9 @@ import (
 	"database/sql"
 	"log"
 
-	"main/model"
 	"time"
+
+	model "github.com/gamepkw/authentication-banking-microservice/internal/models"
 
 	"github.com/go-redis/redis"
 )

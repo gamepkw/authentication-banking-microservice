@@ -5,7 +5,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"main/model"
+	model "github.com/gamepkw/authentication-banking-microservice/internal/models"
 )
 
 // ResponseError represent the response error struct

@@ -7,9 +7,9 @@ import (
 	"math/rand"
 	"time"
 
-	"main/atm/utils"
-	producer "main/kafka/producer"
-	"main/model"
+	"github.com/gamepkw/authentication-banking-microservice/internal/utils"
+	// producer "main/kafka/producer"
+	model "github.com/gamepkw/authentication-banking-microservice/internal/models"
 
 	"github.com/pquerna/otp"
 	"github.com/pquerna/otp/totp"
