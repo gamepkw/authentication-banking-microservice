@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	_accountRepo "github.com/atm5_microservices/accounts_service/internal/repositories"
+	_accountRepo "github.com/gamepkw/accounts-banking-microservice/internal/repositories"
 
-	_accountService "github.com/atm5_microservices/accounts_service/internal/services"
+	_accountService "github.com/gamepkw/accounts-banking-microservice/internal/services"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
