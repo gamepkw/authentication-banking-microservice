@@ -1,0 +1,5 @@
+go mod edit -replace github.com/IBM/sarama=github.com/Shopify/sarama@vlatest
+
+git add .
+git commit -m "commit"
+git push -u origin master

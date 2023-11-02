@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	github.com/Shopify/sarama v1.41.3
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/gamepkw/users-banking-microservice v0.0.0-20230902133859-f973b298198c // indirect
@@ -36,3 +37,5 @@ require (
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/IBM/sarama => github.com/Shopify/sarama vlatest
