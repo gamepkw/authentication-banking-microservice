@@ -3,7 +3,7 @@ package kafka
 import (
 	"fmt"
 
-	"github.com/Shopify/sarama"
+	"gopkg.in/Shopify/sarama.v1"
 )
 
 func CreateConsumer(brokerAddress, topic string) (sarama.Consumer, error) {

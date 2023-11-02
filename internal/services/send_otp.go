@@ -3,6 +3,7 @@ package service
 import (
 	"context"
 
+	producer "github.com/gamepkw/authentication-banking-microservice/internal/kafka/producer"
 	"github.com/spf13/viper"
 )
 

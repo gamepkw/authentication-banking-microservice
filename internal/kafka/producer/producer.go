@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Shopify/sarama"
+	"gopkg.in/Shopify/sarama.v1"
 )
 
 func CreateProducer(brokerAddress string) (sarama.SyncProducer, error) {
