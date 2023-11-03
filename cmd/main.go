@@ -82,11 +82,9 @@ func main() {
 		AllowMethods: []string{http.MethodGet, http.MethodPut, http.MethodPost, http.MethodDelete},
 	}))
 	timeoutContext := time.Duration(viper.GetInt("context.timeout")) * time.Second
-	accountRepo := _authRepostitory.NewAuthRepository(dbConn, redis)
-
-	accountService := _authService.NewAuthService(accountRepo, timeoutContext)
-
-	_authHandler.NewAuthHandler(e, accountService)
+	authRepo := _authRepostitory.NewAuthRepository(dbConn, redis)
+	authService := _authService.NewAuthService(authRepo, timeoutContext)
+	_authHandler.NewAuthHandler(e, authService)
 
 	log.Fatal(e.Start(viper.GetString("server.address")))
 }
